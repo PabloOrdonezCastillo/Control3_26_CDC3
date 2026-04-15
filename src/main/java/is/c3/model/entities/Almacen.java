@@ -58,7 +58,7 @@ public class Almacen implements GestionProductos<Producto> {
 	@Override
 	public void saveAll(Producto[] t) {
 	    if (t != null) {
-	        for (int i = 0; i < t.length; i++) {
+	        for (int i = 0; i < t.length; i++) { //AQUI FALLA ALGO
 	            Producto p = t[i];
 	            if (p != null) {
 	            	productos.add(p);
